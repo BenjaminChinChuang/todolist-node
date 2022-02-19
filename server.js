@@ -1,6 +1,6 @@
 const http = require('http')
 const todoListRoute = require('./routes/todoList')
-const PORT = '3800'
+const PORT = process.env.PORT || '3800'
 
 const server = http.createServer(todoListRoute)
 
